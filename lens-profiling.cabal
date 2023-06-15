@@ -1,0 +1,26 @@
+cabal-version:      3.0
+name:               lens-profiling
+version:            0.1.0.0
+license:            MIT
+license-file:       LICENSE
+author:             Ben Siraphob
+maintainer:         bensiraphob@gmail.com
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall
+
+executable lens-profiling
+    import:           warnings
+    main-is:          Main-lens.hs
+    build-depends:    base, mtl, lens
+    hs-source-dirs:   app
+    default-language: GHC2021
+
+executable optics-profiling
+    import:           warnings
+    main-is:          Main-optics.hs
+    build-depends:    base, mtl, optics
+    hs-source-dirs:   app
+    default-language: GHC2021
