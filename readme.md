@@ -1,3 +1,4 @@
+# Note: this issue has been resolved in https://github.com/well-typed/optics/pull/491
 # Haskell Lens vs Optics Performance Under Profiling
 
 This repository contains a minimal, reproducible example for comparing
